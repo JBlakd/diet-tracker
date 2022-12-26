@@ -1,0 +1,44 @@
+[
+  {
+    "name": "lentilCanned",
+    "description": "coles canned",
+    "kjPer100Grams": 404,
+    "proteinPer100Grams": 7.7,
+    "fibrePer100Grams": 4.6
+  },
+  {
+    "name": "fourBeanMixCanned",
+    "description": "coles canned",
+    "kjPer100Grams": 461,
+    "proteinPer100Grams": 7.6,
+    "fibrePer100Grams": 5.4
+  },
+  {
+    "name": "tomatoCanned",
+    "description": "mutti polpa",
+    "kjPer100Grams": 110,
+    "proteinPer100Grams": 1.2,
+    "fibrePer100Grams": 1
+  },
+  {
+    "name": "porkSausage",
+    "description": "aldi",
+    "kjPer100Grams": 1010,
+    "proteinPer100Grams": 14.5,
+    "fibrePer100Grams": 0
+  },
+  {
+    "name": "brownOnion",
+    "description": "",
+    "kjPer100Grams": 120,
+    "proteinPer100Grams": 2,
+    "fibrePer100Grams": 1.5
+  },
+  {
+    "name": "capsicum",
+    "description": "",
+    "kjPer100Grams": 109,
+    "proteinPer100Grams": 1,
+    "fibrePer100Grams": 2
+  }
+]
