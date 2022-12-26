@@ -35,6 +35,7 @@ interface Day {
 }
 
 interface DayBreakdown {
+  date: Date;
   totalKj: number;
   totalProtein: number;
   totalFibre: number;
@@ -62,7 +63,7 @@ const getDishTotals = (dish: Dish, ingredients: Ingredient[]) => {
 
 const getDayBreakdown = (day: Day | undefined, dishes: Dish[], ingredients: Ingredient[]): DayBreakdown => {
   if (day === undefined || dishes.length === 0 || ingredients.length === 0) {
-    return { totalKj: 0, totalProtein: 0, totalFibre: 0 };
+    return { date: new Date(), totalKj: 0, totalProtein: 0, totalFibre: 0 };
   }
 
   let kilojoulesForDay: number = 0;
@@ -78,6 +79,7 @@ const getDayBreakdown = (day: Day | undefined, dishes: Dish[], ingredients: Ingr
   })
 
   return {
+    date: day.date,
     totalKj: kilojoulesForDay,
     totalProtein: proteinForDay,
     totalFibre: fibreForDay
@@ -90,7 +92,7 @@ const App = () => {
   const [days, setDays] = useState<Day[]>([]);
   const [dishes, setDishes] = useState<Dish[]>([]);
   const [ingredients, setIngredients] = useState<Ingredient[]>([]);
-  const [todayBreakdown, setTodayBreakdown] = useState<DayBreakdown>({ totalKj: 0, totalProtein: 0, totalFibre: 0 });
+  const [todayBreakdown, setTodayBreakdown] = useState<DayBreakdown>({ date: new Date(), totalKj: 0, totalProtein: 0, totalFibre: 0 });
 
   useEffect(() => {
     const fetchAllData = async () => {
