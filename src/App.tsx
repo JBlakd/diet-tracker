@@ -52,6 +52,7 @@ function App() {
       <br></br>
       {JSON.stringify(ingredients)}
       <br></br>
+      successfully migrated to typescript
     </div>
   );
 }
