@@ -1,0 +1,74 @@
+[
+  {
+    "id": 0,
+    "name": "mexicanBeanAndPorkStew",
+    "ingredients": [
+      {
+        "id": 0,
+        "g": 504
+      },
+      {
+        "id": 1,
+        "g": 252
+      },
+      {
+        "id": 2,
+        "g": 800
+      },
+      {
+        "id": 3,
+        "g": 500
+      },
+      {
+        "id": 4,
+        "g": 150
+      },
+      {
+        "id": 5,
+        "g": 150
+      }
+    ],
+    "waterGrams": 400
+  },
+  {
+    "id": 1,
+    "name": "wpcBlueberryShakeNoYogurt",
+    "ingredients": [
+      {
+        "id": 6,
+        "g": 400
+      },
+      {
+        "id": 7,
+        "g": 30
+      },
+      {
+        "id": 8,
+        "g": 30
+      }
+    ],
+    "waterGrams": 0
+  },
+  {
+    "id": 2,
+    "name": "riceBowlSmall",
+    "ingredients": [
+      {
+        "id": 9,
+        "g": 150
+      }
+    ],
+    "waterGrams": 0
+  },
+  {
+    "id": 3,
+    "name": "eggSingle",
+    "ingredients": [
+      {
+        "id": 10,
+        "g": 52
+      }
+    ],
+    "waterGrams": 0
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "id": 0,
+    "name": "lentilCanned",
+    "description": "coles canned",
+    "kjPer100Grams": 404,
+    "proteinPer100Grams": 7.7,
+    "fibrePer100Grams": 4.6
+  },
+  {
+    "id": 1,
+    "name": "fourBeanMixCanned",
+    "description": "coles canned",
+    "kjPer100Grams": 461,
+    "proteinPer100Grams": 7.6,
+    "fibrePer100Grams": 5.4
+  },
+  {
+    "id": 2,
+    "name": "tomatoCanned",
+    "description": "mutti polpa",
+    "kjPer100Grams": 110,
+    "proteinPer100Grams": 1.2,
+    "fibrePer100Grams": 1
+  },
+  {
+    "id": 3,
+    "name": "porkSausage",
+    "description": "aldi",
+    "kjPer100Grams": 1010,
+    "proteinPer100Grams": 14.5,
+    "fibrePer100Grams": 0
+  },
+  {
+    "id": 4,
+    "name": "brownOnion",
+    "description": "",
+    "kjPer100Grams": 120,
+    "proteinPer100Grams": 2,
+    "fibrePer100Grams": 1.5
+  },
+  {
+    "id": 5,
+    "name": "capsicum",
+    "description": "",
+    "kjPer100Grams": 109,
+    "proteinPer100Grams": 1,
+    "fibrePer100Grams": 2
+  },
+  {
+    "id": 6,
+    "name": "fullCreamMilk",
+    "description": "",
+    "kjPer100Grams": 266,
+    "proteinPer100Grams": 3.4,
+    "fibrePer100Grams": 0
+  },
+  {
+    "id": 7,
+    "name": "blueberry",
+    "description": "",
+    "kjPer100Grams": 238,
+    "proteinPer100Grams": 0.74,
+    "fibrePer100Grams": 2.4
+  },
+  {
+    "id": 8,
+    "name": "wheyProteinConcentrateVanilla",
+    "description": "bulk nutrients",
+    "kjPer100Grams": 1661,
+    "proteinPer100Grams": 77.1,
+    "fibrePer100Grams": 0
+  },
+  {
+    "id": 9,
+    "name": "whiteRiceSteamed",
+    "description": "",
+    "kjPer100Grams": 539,
+    "proteinPer100Grams": 2.67,
+    "fibrePer100Grams": 0.4
+  },
+  {
+    "id": 10,
+    "name": "egg",
+    "description": "",
+    "kjPer100Grams": 596,
+    "proteinPer100Grams": 12.2,
+    "fibrePer100Grams": 0
+  }
+]
