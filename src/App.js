@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import days from './db/days.json';
+import ingredients from './db/ingredients.json';
+import meals from './db/meals.json';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+  //const today = days.find(d => d.date === new Date().toISOString().split('T')[0]);
+
+  return JSON.stringify(days);
 }
 
 export default App;
