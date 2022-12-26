@@ -1,17 +1,31 @@
-import days from './db/days.json';
-import ingredients from './db/ingredients.json';
-import meals from './db/meals.json';
+import React, { useEffect, useState } from 'react'
+import axios from 'axios';
 
 const App = () => {
-  //const today = days.find(d => d.date === new Date().toISOString().split('T')[0]);
+  const baseDbUrl = 'https://raw.githubusercontent.com/JBlakd/diet-tracker/main/src/db/';
 
-  //return JSON.stringify(days);
+  const [days, setDays] = useState([]);
+  const [meals, setMeals] = useState([]);
+  const [ingredients, setIngredients] = useState([]);
+
+  useEffect(() => {
+    const fetchAllData = async () => {
+      setDays((await axios.get(`${baseDbUrl}/days.json`)).data);
+      setMeals((await axios.get(`${baseDbUrl}/meals.json`)).data);
+      setIngredients((await axios.get(`${baseDbUrl}/ingredients.json`)).data);
+    };
+
+    fetchAllData().catch(console.error);
+  }, [])
 
   return (
     <div>
       {JSON.stringify(days)}
       <br></br>
-      <p1>the glorious restoration of the gh-pages branch</p1>
+      {JSON.stringify(meals)}
+      <br></br>
+      {JSON.stringify(ingredients)}
+      <br></br>
     </div>
   )
 }
