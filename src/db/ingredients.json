@@ -78,5 +78,13 @@
     "kjPer100Grams": 539,
     "proteinPer100Grams": 2.67,
     "fibrePer100Grams": 0.4
+  },
+  {
+    "id": 10,
+    "name": "egg",
+    "description": "",
+    "kjPer100Grams": 596,
+    "proteinPer100Grams": 12.2,
+    "fibrePer100Grams": 0
   }
 ]

@@ -1,5 +1,6 @@
 [
   {
+    "id": 0,
     "name": "mexicanBeanAndPorkStew",
     "ingredients": [
       {
@@ -30,6 +31,7 @@
     "waterGrams": 400
   },
   {
+    "id": 1,
     "name": "wpcBlueberryShakeNoYogurt",
     "ingredients": [
       {
@@ -48,11 +50,23 @@
     "waterGrams": 0
   },
   {
+    "id": 2,
     "name": "riceBowlSmall",
     "ingredients": [
       {
         "id": 9,
         "g": 150
+      }
+    ],
+    "waterGrams": 0
+  },
+  {
+    "id": 3,
+    "name": "eggSingle",
+    "ingredients": [
+      {
+        "id": 10,
+        "g": 52
       }
     ],
     "waterGrams": 0
