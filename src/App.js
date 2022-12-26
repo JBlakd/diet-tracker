@@ -7,7 +7,12 @@ const App = () => {
 
   //return JSON.stringify(days);
 
-  return "deploy from master test"
+  return (
+    <div>
+      {JSON.stringify(days)}
+      <br>the glorious restoration of the gh-pages branch</br>
+    </div>
+  )
 }
 
 export default App;
