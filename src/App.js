@@ -10,7 +10,8 @@ const App = () => {
   return (
     <div>
       {JSON.stringify(days)}
-      <br>the glorious restoration of the gh-pages branch</br>
+      <br></br>
+      <p1>the glorious restoration of the gh-pages branch</p1>
     </div>
   )
 }
