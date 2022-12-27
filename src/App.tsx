@@ -58,7 +58,6 @@ const getDishTotals = (dish: Dish, ingredients: Ingredient[]) => {
     totals.mass += i.g;
   });
 
-  // console.log(`${dish.name} has ${totals.kj} total kilojoules`)
   return totals;
 }
 
@@ -75,7 +74,6 @@ const getIngredientTotals = (grams: number, ingredient: Ingredient) => {
   totals.fibre += (grams / 100) * ingredient.fibrePer100Grams;
   totals.mass += grams;
 
-  // console.log(`${grams}g of ${ingredient.name} has ${totals.kj} total kilojoules`)
   return totals;
 }
 
@@ -114,10 +112,6 @@ const App = () => {
 
   useEffect(() => {
     const fetchAllData = async () => {
-      // setDays((await axios.get(`${baseDbUrl}/days.json`)).data);
-      // setDishes((await axios.get(`${baseDbUrl}/dishes.json`)).data);
-      // setIngredients((await axios.get(`${baseDbUrl}/ingredients.json`)).data);
-      // setTodayBreakdown(getDayBreakdown(days.at(-1), dishes, ingredients));
       const promises = [
         axios.get(`${baseDbUrl}/days.json`),
         axios.get(`${baseDbUrl}/dishes.json`),
