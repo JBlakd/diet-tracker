@@ -112,23 +112,25 @@ const App = () => {
 
   useEffect(() => {
     const fetchAllData = async () => {
-      const promises = [
+      const [daysResponse, dishesResponse, ingredientsResponse] = await axios.all([
         axios.get(`${baseDbUrl}/days.json`),
         axios.get(`${baseDbUrl}/dishes.json`),
         axios.get(`${baseDbUrl}/ingredients.json`)
-      ];
+      ]);
 
-      const [daysResponse, dishesResponse, ingredientsResponse] = await axios.all(promises);
       setDays(daysResponse.data);
       setDishes(dishesResponse.data);
       setIngredients(ingredientsResponse.data);
-      setDaysBreakdown(days.map(d => getDayBreakdown(d, dishes, ingredients)));
     };
 
     fetchAllData().catch(console.error);
   }, [])
 
-  console.log('days:', days);
+  useEffect(() => {
+    setDaysBreakdown(days.map(d => getDayBreakdown(d, dishes, ingredients)));
+  }, [days, dishes, ingredients])
+
+  console.log("days:", days);
 
   return (
     <div className="App">
