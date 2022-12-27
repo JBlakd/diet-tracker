@@ -13,6 +13,7 @@ interface Ingredient {
 interface FoodAmount {
   id: number;
   g: number;
+  isIngredient: boolean;
 }
 
 interface Dish {
@@ -22,7 +23,7 @@ interface Dish {
   waterGrams: number;
 }
 
-interface DishTotals {
+interface MealTotals {
   kj: number;
   protein: number;
   fibre: number;
@@ -42,7 +43,7 @@ interface DayBreakdown {
 }
 
 const getDishTotals = (dish: Dish, ingredients: Ingredient[]) => {
-  let totals: DishTotals = {
+  let totals: MealTotals = {
     kj: 0,
     protein: 0,
     fibre: 0,
@@ -61,6 +62,23 @@ const getDishTotals = (dish: Dish, ingredients: Ingredient[]) => {
   return totals;
 }
 
+const getIngredientTotals = (grams: number, ingredient: Ingredient) => {
+  let totals: MealTotals = {
+    kj: 0,
+    protein: 0,
+    fibre: 0,
+    mass: 0
+  }
+
+  totals.kj += (grams / 100) * ingredient.kjPer100Grams;
+  totals.protein += (grams / 100) * ingredient.proteinPer100Grams;
+  totals.fibre += (grams / 100) * ingredient.fibrePer100Grams;
+  totals.mass += grams;
+
+  console.log(`${grams}g of ${ingredient.name} has ${totals.kj} total kilojoules`)
+  return totals;
+}
+
 const getDayBreakdown = (day: Day | undefined, dishes: Dish[], ingredients: Ingredient[]): DayBreakdown => {
   if (day === undefined || dishes.length === 0 || ingredients.length === 0) {
     return { date: new Date(), totalKj: 0, totalProtein: 0, totalFibre: 0 };
@@ -71,11 +89,11 @@ const getDayBreakdown = (day: Day | undefined, dishes: Dish[], ingredients: Ingr
   let fibreForDay: number = 0;
 
   day.meals.forEach(m => {
-    const curMealDishTotals = getDishTotals(dishes[m.id], ingredients);
+    const curMealTotals: MealTotals = m.isIngredient ? getIngredientTotals(m.g, ingredients[m.id]) : getDishTotals(dishes[m.id], ingredients);
 
-    kilojoulesForDay += (m.g / curMealDishTotals.mass) * curMealDishTotals.kj;
-    proteinForDay += (m.g / curMealDishTotals.mass) * curMealDishTotals.protein;
-    fibreForDay += (m.g / curMealDishTotals.mass) * curMealDishTotals.fibre;
+    kilojoulesForDay += (m.g / curMealTotals.mass) * curMealTotals.kj;
+    proteinForDay += (m.g / curMealTotals.mass) * curMealTotals.protein;
+    fibreForDay += (m.g / curMealTotals.mass) * curMealTotals.fibre;
   })
 
   return {

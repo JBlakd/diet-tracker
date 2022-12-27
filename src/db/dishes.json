@@ -70,5 +70,16 @@
       }
     ],
     "waterGrams": 0
+  },
+  {
+    "id": 4,
+    "name": "lambSkewer",
+    "ingredients": [
+      {
+        "id": 12,
+        "g": 30
+      }
+    ],
+    "waterGrams": 0
   }
 ]

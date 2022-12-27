@@ -4,27 +4,77 @@
     "meals": [
       {
         "id": 1,
-        "g": 460
+        "g": 460,
+        "isIngredient": false
       },
       {
         "id": 0,
-        "g": 386
+        "g": 386,
+        "isIngredient": false
       },
       {
         "id": 0,
-        "g": 239
+        "g": 239,
+        "isIngredient": false
       },
       {
         "id": 2,
-        "g": 155
+        "g": 155,
+        "isIngredient": false
       },
       {
-        "id": 3,
-        "g": 52
+        "id": 10,
+        "g": 52,
+        "isIngredient": true
       },
       {
         "id": 1,
-        "g": 500
+        "g": 500,
+        "isIngredient": false
+      }
+    ]
+  },
+  {
+    "date": "2022-12-27",
+    "meals": [
+      {
+        "id": 0,
+        "g": 350
+      },
+      {
+        "id": 11,
+        "g": 200,
+        "isIngredient": true
+      },
+      {
+        "id": 4,
+        "g": 120,
+        "isIngredient": false
+      },
+      {
+        "id": 13,
+        "g": 125,
+        "isIngredient": true
+      },
+      {
+        "id": 14,
+        "g": 100,
+        "isIngredient": true
+      },
+      {
+        "id": 15,
+        "g": 150,
+        "isIngredient": true
+      },
+      {
+        "id": 16,
+        "g": 150,
+        "isIngredient": true
+      },
+      {
+        "id": 17,
+        "g": 125,
+        "isIngredient": true
       }
     ]
   }

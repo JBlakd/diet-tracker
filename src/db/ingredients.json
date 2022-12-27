@@ -86,5 +86,61 @@
     "kjPer100Grams": 596,
     "proteinPer100Grams": 12.2,
     "fibrePer100Grams": 0
+  },
+  {
+    "id": 11,
+    "name": "chivePocket",
+    "description": "jiucai hezi",
+    "kjPer100Grams": 729,
+    "proteinPer100Grams": 7.65,
+    "fibrePer100Grams": 6.4
+  },
+  {
+    "id": 12,
+    "name": "lambShoulder",
+    "description": "",
+    "kjPer100Grams": 1151,
+    "proteinPer100Grams": 22.42,
+    "fibrePer100Grams": 0
+  },
+  {
+    "id": 13,
+    "name": "beefPorterhouseSteak",
+    "description": "aldi jindurra station",
+    "kjPer100Grams": 996,
+    "proteinPer100Grams": 19.21,
+    "fibrePer100Grams": 0
+  },
+  {
+    "id": 14,
+    "name": "sweetPotatoLeaf",
+    "description": "",
+    "kjPer100Grams": 146,
+    "proteinPer100Grams": 4,
+    "fibrePer100Grams": 2
+  },
+  {
+    "id": 15,
+    "name": "strawberry",
+    "description": "",
+    "kjPer100Grams": 134,
+    "proteinPer100Grams": 0.67,
+    "fibrePer100Grams": 2
+  },
+  {
+    "id": 16,
+    "name": "blueberry",
+    "description": "",
+    "kjPer100Grams": 238,
+    "proteinPer100Grams": 0.74,
+    "fibrePer100Grams": 2.4
+  },
+  {
+    "id": 17,
+    "name": "lychee",
+    "description": "",
+    "kjPer100Grams": 276,
+    "proteinPer100Grams": 0.83,
+    "fibrePer100Grams": 1.3
   }
 ]
