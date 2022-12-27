@@ -1,41 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Ingredient, Dish, MealTotals, Day, DayBreakdown } from './interfaces'
-
-const getDishTotals = (dish: Dish, ingredients: Ingredient[]) => {
-  let totals: MealTotals = {
-    kj: 0,
-    protein: 0,
-    fibre: 0,
-    mass: dish.waterGrams
-  }
-
-  dish.ingredients.forEach(i => {
-    const fullIngredient: Ingredient = ingredients[i.id];
-    totals.kj += (i.g / 100) * fullIngredient.kjPer100Grams;
-    totals.protein += (i.g / 100) * fullIngredient.proteinPer100Grams;
-    totals.fibre += (i.g / 100) * fullIngredient.fibrePer100Grams;
-    totals.mass += i.g;
-  });
-
-  return totals;
-}
-
-const getIngredientTotals = (grams: number, ingredient: Ingredient) => {
-  let totals: MealTotals = {
-    kj: 0,
-    protein: 0,
-    fibre: 0,
-    mass: 0
-  }
-
-  totals.kj += (grams / 100) * ingredient.kjPer100Grams;
-  totals.protein += (grams / 100) * ingredient.proteinPer100Grams;
-  totals.fibre += (grams / 100) * ingredient.fibrePer100Grams;
-  totals.mass += grams;
-
-  return totals;
-}
+import { getIngredientTotals, getDishTotals } from './utils';
+import DailyBreakdownBarChart from './DailyBreakdownBarChart';
 
 const getDayBreakdown = (day: Day | undefined, dishes: Dish[], ingredients: Ingredient[]): DayBreakdown => {
   if (day === undefined || dishes.length === 0 || ingredients.length === 0) {
@@ -47,11 +14,13 @@ const getDayBreakdown = (day: Day | undefined, dishes: Dish[], ingredients: Ingr
   let fibreForDay: number = 0;
 
   day.meals.forEach(m => {
-    const curMealTotals: MealTotals = m.isIngredient ? getIngredientTotals(m.g, ingredients[m.id]) : getDishTotals(dishes[m.id], ingredients);
+    const curMealTotals: MealTotals = m.isIngredient ? getIngredientTotals(m.g, ingredients[m.id]) : getDishTotals(m.g, dishes[m.id], ingredients);
 
-    kilojoulesForDay += (m.g / curMealTotals.mass) * curMealTotals.kj;
-    proteinForDay += (m.g / curMealTotals.mass) * curMealTotals.protein;
-    fibreForDay += (m.g / curMealTotals.mass) * curMealTotals.fibre;
+    // console.log(curMealTotals);
+
+    kilojoulesForDay += curMealTotals.kj;
+    proteinForDay += curMealTotals.protein;
+    fibreForDay += curMealTotals.fibre;
   })
 
   return {
@@ -96,6 +65,7 @@ const App = () => {
     <div className="App">
       <h1>Daily diet breakdown</h1>
       {JSON.stringify(daysBreakdown)}
+      <DailyBreakdownBarChart days={days} dishes={dishes} ingredients={ingredients} />
     </div>
   );
 }

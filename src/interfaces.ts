@@ -13,6 +13,11 @@ interface FoodAmount {
   isIngredient: boolean;
 }
 
+interface FoodId {
+  id: number;
+  isIngredient: boolean;
+}
+
 interface Dish {
   id: string;
   name: string;
@@ -21,10 +26,12 @@ interface Dish {
 }
 
 interface MealTotals {
+  name: string;
   kj: number;
   protein: number;
   fibre: number;
   mass: number;
+  isIngredient: boolean;
 }
 
 interface Day {
@@ -39,4 +46,4 @@ interface DayBreakdown {
   totalFibre: number;
 }
 
-export type { Ingredient, FoodAmount, Dish, MealTotals, Day, DayBreakdown }
+export type { Ingredient, FoodAmount, FoodId, Dish, MealTotals, Day, DayBreakdown }
