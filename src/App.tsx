@@ -58,7 +58,7 @@ const getDishTotals = (dish: Dish, ingredients: Ingredient[]) => {
     totals.mass += i.g;
   });
 
-  console.log(`${dish.name} has ${totals.kj} total kilojoules`)
+  // console.log(`${dish.name} has ${totals.kj} total kilojoules`)
   return totals;
 }
 
@@ -75,7 +75,7 @@ const getIngredientTotals = (grams: number, ingredient: Ingredient) => {
   totals.fibre += (grams / 100) * ingredient.fibrePer100Grams;
   totals.mass += grams;
 
-  console.log(`${grams}g of ${ingredient.name} has ${totals.kj} total kilojoules`)
+  // console.log(`${grams}g of ${ingredient.name} has ${totals.kj} total kilojoules`)
   return totals;
 }
 
@@ -110,27 +110,36 @@ const App = () => {
   const [days, setDays] = useState<Day[]>([]);
   const [dishes, setDishes] = useState<Dish[]>([]);
   const [ingredients, setIngredients] = useState<Ingredient[]>([]);
-  const [todayBreakdown, setTodayBreakdown] = useState<DayBreakdown>({ date: new Date(), totalKj: 0, totalProtein: 0, totalFibre: 0 });
+  const [daysBreakdown, setDaysBreakdown] = useState<DayBreakdown[]>([]);
 
   useEffect(() => {
     const fetchAllData = async () => {
-      setDays((await axios.get(`${baseDbUrl}/days.json`)).data);
-      setDishes((await axios.get(`${baseDbUrl}/dishes.json`)).data);
-      setIngredients((await axios.get(`${baseDbUrl}/ingredients.json`)).data);
+      // setDays((await axios.get(`${baseDbUrl}/days.json`)).data);
+      // setDishes((await axios.get(`${baseDbUrl}/dishes.json`)).data);
+      // setIngredients((await axios.get(`${baseDbUrl}/ingredients.json`)).data);
+      // setTodayBreakdown(getDayBreakdown(days.at(-1), dishes, ingredients));
+      const promises = [
+        axios.get(`${baseDbUrl}/days.json`),
+        axios.get(`${baseDbUrl}/dishes.json`),
+        axios.get(`${baseDbUrl}/ingredients.json`)
+      ];
+
+      const [daysResponse, dishesResponse, ingredientsResponse] = await axios.all(promises);
+      setDays(daysResponse.data);
+      setDishes(dishesResponse.data);
+      setIngredients(ingredientsResponse.data);
+      setDaysBreakdown(days.map(d => getDayBreakdown(d, dishes, ingredients)));
     };
 
-    if (days.length === 0 || dishes.length === 0 || ingredients.length === 0) {
-      fetchAllData().catch(console.error);
-    }
+    fetchAllData().catch(console.error);
+  }, [])
 
-    setTodayBreakdown(getDayBreakdown(days.at(-1), dishes, ingredients));
-
-  }, [days, dishes, ingredients])
+  console.log('days:', days);
 
   return (
     <div className="App">
-      <h1>Today's breakdown</h1>
-      {JSON.stringify(todayBreakdown)}
+      <h1>Daily diet breakdown</h1>
+      {JSON.stringify(daysBreakdown)}
     </div>
   );
 }
