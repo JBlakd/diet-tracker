@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/diet-tracker/static/js/main.5025a47d.js",
+    "main.js": "/diet-tracker/static/js/main.dc7f24cc.js",
     "index.html": "/diet-tracker/index.html",
-    "main.5025a47d.js.map": "/diet-tracker/static/js/main.5025a47d.js.map"
+    "main.dc7f24cc.js.map": "/diet-tracker/static/js/main.dc7f24cc.js.map"
   },
   "entrypoints": [
-    "static/js/main.5025a47d.js"
+    "static/js/main.dc7f24cc.js"
   ]
 }
