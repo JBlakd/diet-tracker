@@ -82,7 +82,7 @@
     "date": "2022-12-28",
     "meals": [
       {
-        "id": 18,
+        "id": 20,
         "g": 110,
         "isIngredient": true
       },
@@ -109,11 +109,6 @@
       {
         "id": 1,
         "g": 467,
-        "isIngredient": false
-      },
-      {
-        "id": 0,
-        "g": 372,
         "isIngredient": false
       },
       {

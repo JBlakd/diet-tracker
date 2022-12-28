@@ -158,5 +158,13 @@
     "kjPer100Grams": 1090,
     "proteinPer100Grams": 13.1,
     "fibrePer100Grams": 0
+  },
+  {
+    "id": 20,
+    "name": "orange",
+    "description": "",
+    "kjPer100Grams": 197,
+    "proteinPer100Grams": 0.94,
+    "fibrePer100Grams": 2.4
   }
 ]
