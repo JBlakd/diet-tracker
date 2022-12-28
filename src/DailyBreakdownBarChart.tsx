@@ -8,7 +8,7 @@ import {
   Legend
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import { Day, Dish, Ingredient, FoodId, FoodAmount } from './interfaces';
+import { Day, Dish, Ingredient, FoodAmount } from './interfaces';
 import { getFoodName, getMealTotalsOfFoodInDay, randomRGB } from './utils';
 import differenceInDays from 'date-fns/differenceInDays'
 
