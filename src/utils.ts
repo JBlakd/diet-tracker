@@ -1,7 +1,10 @@
 import { FoodId, FoodAmount, Dish, Ingredient, Day, MealTotals } from "./interfaces"
 
-const getFoodName = (food: FoodAmount, dishes: Dish[], ingredients: Ingredient[]): string => {
-  return food.isIngredient ? `${food.g}g of ${ingredients[food.id].name}` : `${food.g}g of ${dishes[food.id].name}`;
+const getFoodName = (food: FoodAmount, dishes: Dish[], ingredients: Ingredient[], withGrams: boolean): string => {
+  if (withGrams) {
+    return food.isIngredient ? `${food.g}g of ${ingredients[food.id].name}` : `${food.g}g of ${dishes[food.id].name}`;
+  }
+  return food.isIngredient ? ingredients[food.id].name : dishes[food.id].name;
 }
 
 const isFoodPresentInDay = (food: FoodId, day: Day): boolean => {
@@ -27,7 +30,7 @@ const getMealTotalsOfFoodInDay = (food: FoodAmount, day: Day, dishes: Dish[], in
   day.meals.forEach(m => {
     if (m.g === food.g && m.id === food.id && m.isIngredient === food.isIngredient) {
       totals = food.isIngredient ? getIngredientTotals(m.g, ingredients[m.id]) : getDishTotals(m.g, dishes[m.id], ingredients);
-      console.log(`day ${day.date} meal ${totals.name} grams ${m.g} kj ${totals.kj}`);
+      // console.log(`day ${day.date} meal ${totals.name} grams ${m.g} kj ${totals.kj}`);
     }
   })
 

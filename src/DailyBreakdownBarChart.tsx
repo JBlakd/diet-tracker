@@ -45,14 +45,16 @@ const options = {
 
 const DailyBreakdownBarChart = ({ days, dishes, ingredients }: { days: Day[], dishes: Dish[], ingredients: Ingredient[] }) => {
   let allFoodAmounts: FoodAmount[] = [];
+  let foodNameToRgbMap = new Map<string, string>();
   days.forEach(d => {
     d.meals.forEach(m => {
       m.date = d.date;
       allFoodAmounts.push(m);
+      foodNameToRgbMap.set(getFoodName(m, dishes, ingredients, false), randomRGB());
     })
   });
 
-  console.log('allFoodAmounts: ', allFoodAmounts);
+  // console.log('allFoodAmounts: ', allFoodAmounts);
 
   const datasets = allFoodAmounts.map(fa => {
     // dailyData should have same length as the number of days == labels.length
@@ -62,9 +64,9 @@ const DailyBreakdownBarChart = ({ days, dishes, ingredients }: { days: Day[], di
     dailyData[curFaDaysIndex] = getMealTotalsOfFoodInDay(fa, days[curFaDaysIndex], dishes, ingredients);
     // console.log('dailydata:', dailyData);
     return {
-      label: getFoodName(fa, dishes, ingredients),
+      label: getFoodName(fa, dishes, ingredients, true),
       data: dailyData.map(dd => dd.kj),
-      backgroundColor: randomRGB()
+      backgroundColor: foodNameToRgbMap.get(getFoodName(fa, dishes, ingredients, false))
     };
   });
 
