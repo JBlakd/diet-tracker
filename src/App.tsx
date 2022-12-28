@@ -60,7 +60,7 @@ const App = () => {
     setDaysBreakdown(days.map(d => getDayBreakdown(d, dishes, ingredients)));
   }, [days, dishes, ingredients])
 
-  console.log("days:", days);
+  // console.log("days:", days);
 
   const chartContainerStyles: CSS.Properties = {
     padding: '2rem',

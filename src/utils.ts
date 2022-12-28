@@ -1,7 +1,7 @@
-import { FoodId, Dish, Ingredient, Day, MealTotals } from "./interfaces"
+import { FoodId, FoodAmount, Dish, Ingredient, Day, MealTotals } from "./interfaces"
 
-const getFoodName = (food: FoodId, dishes: Dish[], ingredients: Ingredient[]): string => {
-  return food.isIngredient ? ingredients[food.id].name : dishes[food.id].name;
+const getFoodName = (food: FoodAmount, dishes: Dish[], ingredients: Ingredient[]): string => {
+  return food.isIngredient ? `${food.g}g of ${ingredients[food.id].name}` : `${food.g}g of ${dishes[food.id].name}`;
 }
 
 const isFoodPresentInDay = (food: FoodId, day: Day): boolean => {
@@ -14,18 +14,24 @@ const isFoodPresentInDay = (food: FoodId, day: Day): boolean => {
   return false
 }
 
-const getMealTotalsOfFoodInDay = (food: FoodId, day: Day, dishes: Dish[], ingredients: Ingredient[]): number => {
-  let kj = 0;
+const getMealTotalsOfFoodInDay = (food: FoodAmount, day: Day, dishes: Dish[], ingredients: Ingredient[]): MealTotals => {
+  let totals: MealTotals = {
+    name: "",
+    kj: 0,
+    protein: 0,
+    fibre: 0,
+    mass: 0,
+    isIngredient: false
+  };
 
   day.meals.forEach(m => {
-    if (m.id === food.id && m.isIngredient === food.isIngredient) {
-      const totals = food.isIngredient ? getIngredientTotals(m.g, ingredients[m.id]) : getDishTotals(m.g, dishes[m.id], ingredients);
-      // console.log(`day ${day.date} meal ${totals.name} kj ${totals.kj}`);
-      kj = totals.kj;
+    if (m.g === food.g && m.id === food.id && m.isIngredient === food.isIngredient) {
+      totals = food.isIngredient ? getIngredientTotals(m.g, ingredients[m.id]) : getDishTotals(m.g, dishes[m.id], ingredients);
+      console.log(`day ${day.date} meal ${totals.name} grams ${m.g} kj ${totals.kj}`);
     }
   })
 
-  return kj;
+  return totals;
 }
 
 

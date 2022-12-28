@@ -11,6 +11,7 @@ interface FoodAmount {
   id: number;
   g: number;
   isIngredient: boolean;
+  date?: Date;
 }
 
 interface FoodId {
