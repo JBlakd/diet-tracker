@@ -145,11 +145,11 @@
   },
   {
     "id": 18,
-    "name": "redLentilSplit",
+    "name": "cookedRedLentils",
     "description": "",
-    "kjPer100Grams": 1450,
-    "proteinPer100Grams": 24,
-    "fibrePer100Grams": 13.3
+    "kjPer100Grams": 481,
+    "proteinPer100Grams": 8.97,
+    "fibrePer100Grams": 7.9
   },
   {
     "id": 19,
