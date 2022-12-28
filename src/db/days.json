@@ -127,5 +127,25 @@
         "isIngredient": false
       }
     ]
+  },
+  {
+    "date": "2022-12-29",
+    "meals": [
+      {
+        "id": 6,
+        "g": 231,
+        "isIngredient": true
+      },
+      {
+        "id": 6,
+        "g": 280,
+        "isIngredient": false
+      },
+      {
+        "id": 5,
+        "g": 211,
+        "isIngredient": false
+      }
+    ]
   }
 ]

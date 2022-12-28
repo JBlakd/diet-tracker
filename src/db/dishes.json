@@ -108,5 +108,20 @@
       }
     ],
     "waterGrams": 400
+  },
+  {
+    "id": 6,
+    "name": "frenchPressCoffee",
+    "ingredients": [
+      {
+        "id": 6,
+        "g": 103
+      },
+      {
+        "id": 21,
+        "g": 2
+      }
+    ],
+    "waterGrams": 190
   }
 ]

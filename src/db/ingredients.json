@@ -166,5 +166,13 @@
     "kjPer100Grams": 197,
     "proteinPer100Grams": 0.94,
     "fibrePer100Grams": 2.4
+  },
+  {
+    "id": 21,
+    "name": "sugar",
+    "description": "",
+    "kjPer100Grams": 1619,
+    "proteinPer100Grams": 0,
+    "fibrePer100Grams": 0
   }
 ]
