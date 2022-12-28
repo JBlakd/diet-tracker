@@ -81,5 +81,32 @@
       }
     ],
     "waterGrams": 0
+  },
+  {
+    "id": 5,
+    "name": "redLentilStew",
+    "ingredients": [
+      {
+        "id": 18,
+        "g": 1000
+      },
+      {
+        "id": 19,
+        "g": 500
+      },
+      {
+        "id": 2,
+        "g": 800
+      },
+      {
+        "id": 4,
+        "g": 150
+      },
+      {
+        "id": 5,
+        "g": 150
+      }
+    ],
+    "waterGrams": 0
   }
 ]
