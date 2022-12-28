@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Ingredient, Dish, MealTotals, Day, DayBreakdown } from './interfaces'
 import { getIngredientTotals, getDishTotals } from './utils';
 import DailyBreakdownBarChart from './DailyBreakdownBarChart';
+import CSS from 'csstype';
 
 const getDayBreakdown = (day: Day | undefined, dishes: Dish[], ingredients: Ingredient[]): DayBreakdown => {
   if (day === undefined || dishes.length === 0 || ingredients.length === 0) {
@@ -61,11 +62,19 @@ const App = () => {
 
   console.log("days:", days);
 
+  const chartContainerStyles: CSS.Properties = {
+    padding: '2rem',
+    height: '50vh',
+    width: '80vw',
+  }
+
   return (
     <div className="App">
       <h1>Daily diet breakdown</h1>
-      {JSON.stringify(daysBreakdown)}
-      <DailyBreakdownBarChart days={days} dishes={dishes} ingredients={ingredients} />
+      <div style={chartContainerStyles}>
+        <DailyBreakdownBarChart days={days} dishes={dishes} ingredients={ingredients} />
+      </div>
+      {daysBreakdown.map(dbd => <div key={dbd.date.toString()}>{JSON.stringify(dbd)}<br></br></div>)}
     </div>
   );
 }
