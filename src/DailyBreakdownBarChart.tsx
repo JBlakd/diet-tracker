@@ -38,8 +38,12 @@ const options = {
     },
     y: {
       stacked: true,
+      ticks: {
+        callback: (value: any, index: any, ticks: any) => `${value} kJ`
+      }
     },
   },
+  maintainAspectRatio: false
 };
 
 const DailyBreakdownBarChart = ({ days, dishes, ingredients }: { days: Day[], dishes: Dish[], ingredients: Ingredient[] }) => {
