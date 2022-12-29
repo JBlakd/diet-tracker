@@ -174,5 +174,13 @@
     "kjPer100Grams": 1619,
     "proteinPer100Grams": 0,
     "fibrePer100Grams": 0
+  },
+  {
+    "id": 22,
+    "name": "mangoMeat",
+    "description": "",
+    "kjPer100Grams": 449,
+    "proteinPer100Grams": 0.84,
+    "fibrePer100Grams": 3
   }
 ]
