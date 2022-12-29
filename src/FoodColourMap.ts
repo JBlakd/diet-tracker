@@ -31,7 +31,10 @@ class FoodColourMap {
   // Whenever a particular colour is used, pop the last element  from the colours array
   // When a colours array is exhausted, generate a new one using the immutable array, using a randomised version of the original
   public getFoodColour(qualitativeColour: string): string {
+    // console.log(`mutablemap has ${qualitativeColour}: ${this.mutableMap.has(qualitativeColour)}`);
+    // console.log(`immutablemap has ${qualitativeColour}: ${this.immutableMap.has(qualitativeColour)}`);
     if (qualitativeColour === undefined || !this.mutableMap.has(qualitativeColour) || !this.immutableMap.has(qualitativeColour)) {
+      // console.log(`from ${qualitativeColour} generated #00FFFFFF`);
       return '#00FFFFFF'; // transparent
     }
 
@@ -40,6 +43,8 @@ class FoodColourMap {
       // repopulate mutableMap's depleted array with a randomised one from immutableMap
       this.mutableMap.set(qualitativeColour, this.immutableMap.get(qualitativeColour)!.sort(() => Math.random() - 0.5));
     }
+
+    console.log(`from ${qualitativeColour} generated ${retVal}`);
 
     return retVal;
   }

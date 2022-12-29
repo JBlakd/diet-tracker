@@ -7,7 +7,6 @@ import CSS from 'csstype';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import differenceInDays from 'date-fns/differenceInDays'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const getDayBreakdown = (day: Day | undefined, dishes: Dish[], ingredients: Ingredient[]): DayBreakdown => {

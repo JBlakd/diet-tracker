@@ -5,6 +5,7 @@ interface Ingredient {
   kjPer100Grams: number;
   proteinPer100Grams: number;
   fibrePer100Grams: number;
+  foodColour: string;
 }
 
 interface FoodAmount {
@@ -24,6 +25,7 @@ interface Dish {
   name: string;
   ingredients: FoodAmount[];
   waterGrams: number;
+  foodColour: string;
 }
 
 interface MealTotals {
