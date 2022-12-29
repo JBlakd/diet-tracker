@@ -7,6 +7,8 @@ import CSS from 'csstype';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import differenceInDays from 'date-fns/differenceInDays'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const getDayBreakdown = (day: Day | undefined, dishes: Dish[], ingredients: Ingredient[]): DayBreakdown => {
   if (day === undefined || dishes.length === 0 || ingredients.length === 0) {
@@ -60,21 +62,23 @@ const App = () => {
   }, [])
 
   useEffect(() => {
-    setDaysBreakdown(days.map(d => getDayBreakdown(d, dishes, ingredients)));
+    const daysCopy = (new Array<Day>()).concat(days).reverse();
+    setDaysBreakdown(daysCopy.map(d => getDayBreakdown(d, dishes, ingredients)));
   }, [days, dishes, ingredients])
 
   // console.log("days:", days);
 
   const chartContainerStyles: CSS.Properties = {
-    padding: '2rem',
-    height: '50vh',
-    width: '80vw',
+    height: '60vh',
+    // width: '100vw',
   }
 
   return (
     <div className="App">
-      <h1>Daily diet breakdown</h1>
-      <Container>
+      <Container className="text-center">
+        <Row>
+          <Col><h1>Ivan's daily diet breakdown</h1></Col>
+        </Row>
         <Row>
           <Col>
             <div style={chartContainerStyles}>
@@ -82,11 +86,19 @@ const App = () => {
             </div>
           </Col>
         </Row>
+        <Row className="fw-bold">
+          <Col>Date</Col> <Col>KJ</Col> <Col>Protein (g)</Col> <Col>Fibre (g)</Col>
+        </Row>
+        {daysBreakdown.map(dbd => (
+          <Row>
+            <Col>{dbd.date.toString()}</Col> <Col>{dbd.totalKj}</Col> <Col>{dbd.totalProtein}</Col> <Col>{dbd.totalFibre}</Col>
+          </Row>
+        ))}
       </Container>
-
-      {daysBreakdown.map(dbd => <div key={dbd.date.toString()}>{JSON.stringify(dbd)}<br></br></div>)}
     </div>
   );
 }
 
 export default App;
+
+
