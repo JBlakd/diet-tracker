@@ -4,6 +4,9 @@ import { Ingredient, Dish, MealTotals, Day, DayBreakdown } from './interfaces'
 import { getIngredientTotals, getDishTotals } from './utils';
 import DailyBreakdownBarChart from './DailyBreakdownBarChart';
 import CSS from 'csstype';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const getDayBreakdown = (day: Day | undefined, dishes: Dish[], ingredients: Ingredient[]): DayBreakdown => {
   if (day === undefined || dishes.length === 0 || ingredients.length === 0) {
@@ -71,9 +74,16 @@ const App = () => {
   return (
     <div className="App">
       <h1>Daily diet breakdown</h1>
-      <div style={chartContainerStyles}>
-        <DailyBreakdownBarChart days={days} dishes={dishes} ingredients={ingredients} />
-      </div>
+      <Container>
+        <Row>
+          <Col>
+            <div style={chartContainerStyles}>
+              <DailyBreakdownBarChart days={days} dishes={dishes} ingredients={ingredients} />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
       {daysBreakdown.map(dbd => <div key={dbd.date.toString()}>{JSON.stringify(dbd)}<br></br></div>)}
     </div>
   );

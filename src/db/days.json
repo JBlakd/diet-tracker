@@ -145,6 +145,16 @@
         "id": 5,
         "g": 211,
         "isIngredient": false
+      },
+      {
+        "id": 5,
+        "g": 471.1,
+        "isIngredient": false
+      },
+      {
+        "id": 14,
+        "g": 113,
+        "isIngredient": true
       }
     ]
   }
