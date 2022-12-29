@@ -1,3 +1,4 @@
+import FoodColourMap from "./FoodColourMap";
 import { FoodId, FoodAmount, Dish, Ingredient, Day, MealTotals } from "./interfaces"
 
 const getFoodName = (food: FoodAmount, dishes: Dish[], ingredients: Ingredient[], withGrams: boolean): string => {
@@ -90,4 +91,11 @@ const randomNum = () => Math.floor(Math.random() * (235 - 52 + 1) + 52);
 
 const randomRGB = () => `rgb(${randomNum()}, ${randomNum()}, ${randomNum()})`;
 
-export { getFoodName, isFoodPresentInDay, getIngredientTotals, getDishTotals, getMealTotalsOfFoodInDay, randomRGB };
+const getFoodColour = (food: FoodAmount, dishes: Dish[], ingredients: Ingredient[]) =>
+  food.isIngredient
+    ? FoodColourMap.getInstance().getFoodColour(ingredients[food.id].foodColour)
+    : FoodColourMap.getInstance().getFoodColour(dishes[food.id].foodColour)
+
+
+
+export { getFoodName, isFoodPresentInDay, getIngredientTotals, getDishTotals, getMealTotalsOfFoodInDay, randomRGB, getFoodColour };

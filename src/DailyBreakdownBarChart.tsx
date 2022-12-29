@@ -9,8 +9,9 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import { Day, Dish, Ingredient, FoodAmount } from './interfaces';
-import { getFoodName, getMealTotalsOfFoodInDay, randomRGB } from './utils';
+import { getFoodColour, getFoodName, getMealTotalsOfFoodInDay, randomRGB } from './utils';
 import differenceInDays from 'date-fns/differenceInDays'
+import FoodColourMap from './FoodColourMap';
 
 ChartJS.register(
   CategoryScale,
@@ -53,7 +54,7 @@ const DailyBreakdownBarChart = ({ days, dishes, ingredients }: { days: Day[], di
     d.meals.forEach(m => {
       m.date = d.date;
       allFoodAmounts.push(m);
-      foodNameToRgbMap.set(getFoodName(m, dishes, ingredients, false), randomRGB());
+      foodNameToRgbMap.set(getFoodName(m, dishes, ingredients, false), getFoodColour(m, dishes, ingredients));
     })
   });
 

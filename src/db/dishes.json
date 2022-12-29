@@ -28,7 +28,8 @@
         "g": 150
       }
     ],
-    "waterGrams": 400
+    "waterGrams": 400,
+    "foodColour": "tomato"
   },
   {
     "id": 1,
@@ -47,7 +48,8 @@
         "g": 30
       }
     ],
-    "waterGrams": 0
+    "waterGrams": 0,
+    "foodColour": "grape"
   },
   {
     "id": 2,
@@ -58,7 +60,8 @@
         "g": 150
       }
     ],
-    "waterGrams": 0
+    "waterGrams": 0,
+    "foodColour": "white"
   },
   {
     "id": 3,
@@ -69,7 +72,8 @@
         "g": 52
       }
     ],
-    "waterGrams": 0
+    "waterGrams": 0,
+    "foodColour": "wheat"
   },
   {
     "id": 4,
@@ -80,7 +84,8 @@
         "g": 30
       }
     ],
-    "waterGrams": 0
+    "waterGrams": 0,
+    "foodColour": "redMeat"
   },
   {
     "id": 5,
@@ -107,7 +112,8 @@
         "g": 150
       }
     ],
-    "waterGrams": 400
+    "waterGrams": 400,
+    "foodColour": "tomato"
   },
   {
     "id": 6,
@@ -122,6 +128,7 @@
         "g": 2
       }
     ],
-    "waterGrams": 190
+    "waterGrams": 190,
+    "foodColour": "brown"
   }
 ]
