@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/diet-tracker/static/css/main.c2cab247.css",
-    "main.js": "/diet-tracker/static/js/main.79d4e7c9.js",
+    "main.js": "/diet-tracker/static/js/main.bab22c61.js",
     "index.html": "/diet-tracker/index.html",
     "main.c2cab247.css.map": "/diet-tracker/static/css/main.c2cab247.css.map",
-    "main.79d4e7c9.js.map": "/diet-tracker/static/js/main.79d4e7c9.js.map"
+    "main.bab22c61.js.map": "/diet-tracker/static/js/main.bab22c61.js.map"
   },
   "entrypoints": [
     "static/css/main.c2cab247.css",
-    "static/js/main.79d4e7c9.js"
+    "static/js/main.bab22c61.js"
   ]
 }
