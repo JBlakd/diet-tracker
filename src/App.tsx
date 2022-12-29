@@ -93,7 +93,7 @@ const App = () => {
         </Row>
         {daysBreakdown.map(dbd => (
           <Row key={dbd.date.toString()}>
-            <Col>{dbd.date.toString()}</Col> <Col>{dbd.totalKj}</Col> <Col>{dbd.totalProtein}</Col> <Col>{dbd.totalFibre}</Col>
+            <Col>{dbd.date.toString()}</Col> <Col>{Math.round(dbd.totalKj)}</Col> <Col>{Math.round(dbd.totalProtein)}</Col> <Col>{Math.round(dbd.totalFibre)}</Col>
           </Row>
         ))}
       </Container>
