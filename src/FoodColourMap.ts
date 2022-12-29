@@ -14,10 +14,10 @@ class FoodColourMap {
     ['brown', ['#8b4726', '#a0522d', '#8b5a2b', '#8b7355']],
   ]);
 
-  private mutableMap: Map<string, string[]>;
+  // private mutableMap: Map<string, string[]>;
 
   private constructor() {
-    this.mutableMap = new Map(this.immutableMap);
+    // this.mutableMap = new Map(this.immutableMap);
   }
 
   public static getInstance(): FoodColourMap {
@@ -33,18 +33,19 @@ class FoodColourMap {
   public getFoodColour(qualitativeColour: string): string {
     // console.log(`mutablemap has ${qualitativeColour}: ${this.mutableMap.has(qualitativeColour)}`);
     // console.log(`immutablemap has ${qualitativeColour}: ${this.immutableMap.has(qualitativeColour)}`);
-    if (qualitativeColour === undefined || !this.mutableMap.has(qualitativeColour) || !this.immutableMap.has(qualitativeColour)) {
+    if (qualitativeColour === undefined || !this.immutableMap.has(qualitativeColour)) {
       // console.log(`from ${qualitativeColour} generated #00FFFFFF`);
       return '#00FFFFFF'; // transparent
     }
 
-    const retVal: string = this.mutableMap.get(qualitativeColour)!.pop()!;
-    if (this.mutableMap.get(qualitativeColour)!.length === 0) {
-      // repopulate mutableMap's depleted array with a randomised one from immutableMap
-      this.mutableMap.set(qualitativeColour, this.immutableMap.get(qualitativeColour)!.sort(() => Math.random() - 0.5));
-    }
+    const colourArray = this.immutableMap.get(qualitativeColour)!;
+    const retVal: string = colourArray[Math.floor(Math.random() * colourArray.length)];
+    // if (this.mutableMap.get(qualitativeColour)!.length === 0) {
+    //   // repopulate mutableMap's depleted array with a randomised one from immutableMap
+    //   this.mutableMap.set(qualitativeColour, this.immutableMap.get(qualitativeColour)!.sort(() => Math.random() - 0.5));
+    // }
 
-    console.log(`from ${qualitativeColour} generated ${retVal}`);
+    // console.log(`from ${qualitativeColour} generated ${retVal}`);
 
     return retVal;
   }

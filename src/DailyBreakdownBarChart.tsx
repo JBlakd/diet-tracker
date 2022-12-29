@@ -9,9 +9,8 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import { Day, Dish, Ingredient, FoodAmount } from './interfaces';
-import { getFoodColour, getFoodName, getMealTotalsOfFoodInDay, randomRGB } from './utils';
+import { getFoodColour, getFoodName, getMealTotalsOfFoodInDay } from './utils';
 import differenceInDays from 'date-fns/differenceInDays'
-import FoodColourMap from './FoodColourMap';
 
 ChartJS.register(
   CategoryScale,

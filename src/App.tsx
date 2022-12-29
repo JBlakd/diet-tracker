@@ -52,6 +52,8 @@ const App = () => {
         axios.get(`${baseDbUrl}/ingredients.json`)
       ]);
 
+      // console.log("dishesResponse.data:", dishesResponse.data);
+
       setDays(daysResponse.data);
       setDishes(dishesResponse.data);
       setIngredients(ingredientsResponse.data);
@@ -65,7 +67,8 @@ const App = () => {
     setDaysBreakdown(daysCopy.map(d => getDayBreakdown(d, dishes, ingredients)));
   }, [days, dishes, ingredients])
 
-  // console.log("days:", days);
+  // console.log("ingredients:", ingredients);
+  // console.log("dishes:", dishes);
 
   const chartContainerStyles: CSS.Properties = {
     height: '60vh',
@@ -89,7 +92,7 @@ const App = () => {
           <Col>Date</Col> <Col>KJ</Col> <Col>Protein (g)</Col> <Col>Fibre (g)</Col>
         </Row>
         {daysBreakdown.map(dbd => (
-          <Row>
+          <Row key={dbd.date.toString()}>
             <Col>{dbd.date.toString()}</Col> <Col>{dbd.totalKj}</Col> <Col>{dbd.totalProtein}</Col> <Col>{dbd.totalFibre}</Col>
           </Row>
         ))}
