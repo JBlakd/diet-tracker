@@ -130,5 +130,29 @@
     ],
     "waterGrams": 190,
     "foodColour": "brown"
+  },
+  {
+    "id": 7,
+    "name": "wpcMangoShake",
+    "ingredients": [
+      {
+        "id": 6,
+        "g": 300
+      },
+      {
+        "id": 22,
+        "g": 75
+      },
+      {
+        "id": 8,
+        "g": 30
+      },
+      {
+        "id": 24,
+        "g": 100
+      }
+    ],
+    "waterGrams": 0,
+    "foodColour": "grape"
   }
 ]

@@ -205,5 +205,41 @@
     "proteinPer100Grams": 0.84,
     "fibrePer100Grams": 3,
     "foodColour": "orange"
+  },
+  {
+    "id": 23,
+    "name": "exercise",
+    "description": "",
+    "kjPer100Grams": -100,
+    "proteinPer100Grams": 0,
+    "fibrePer100Grams": 0,
+    "foodColour": "water"
+  },
+  {
+    "id": 24,
+    "name": "greekYogurt",
+    "description": "",
+    "kjPer100Grams": 462,
+    "proteinPer100Grams": 3.3,
+    "fibrePer100Grams": 0,
+    "foodColour": "white"
+  },
+  {
+    "id": 25,
+    "name": "porkBellyGrilled",
+    "description": "",
+    "kjPer100Grams": 1462,
+    "proteinPer100Grams": 18.21,
+    "fibrePer100Grams": 0,
+    "foodColour": "redMeat"
+  },
+  {
+    "id": 26,
+    "name": "asparagusCooked",
+    "description": "",
+    "kjPer100Grams": 163,
+    "proteinPer100Grams": 2.33,
+    "fibrePer100Grams": 1.9,
+    "foodColour": "darkGreen"
   }
 ]
