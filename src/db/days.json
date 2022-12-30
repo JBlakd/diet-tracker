@@ -75,6 +75,11 @@
         "id": 17,
         "g": 125,
         "isIngredient": true
+      },
+      {
+        "id": 23,
+        "g": 418,
+        "isIngredient": true
       }
     ]
   },
