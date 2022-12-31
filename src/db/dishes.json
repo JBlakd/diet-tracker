@@ -49,7 +49,7 @@
       }
     ],
     "waterGrams": 0,
-    "foodColour": "grape"
+    "foodColour": "beige"
   },
   {
     "id": 2,
@@ -153,6 +153,6 @@
       }
     ],
     "waterGrams": 0,
-    "foodColour": "grape"
+    "foodColour": "beige"
   }
 ]

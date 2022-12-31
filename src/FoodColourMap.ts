@@ -8,10 +8,11 @@ class FoodColourMap {
     ['wheat', ['#ffc125', '#eead0e', '#ffd700']],
     ['tomato', ['#ee5c42', '#cd3700', '#ee4000', '#ee2c2c']],
     ['redMeat', ['#8b0000', '#8b2500', '#8b3626']],
-    ['white', ['#f2f2f2', '#e8e8e8', '#fcfcfc',]],
+    ['white', ['#f2f2f2', '#e8e8e8', '#fcfcfc', '#f0f8ff']],
     ['darkGreen', ['#2e8b57', '#548b54', '#008b45']],
     ['orange', ['#ff8c00', '#ff7f00', '#ee7600']],
     ['brown', ['#8b4726', '#a0522d', '#8b5a2b', '#8b7355']],
+    ['beige', ['#faebd7', '#ffefdb', '#ffe4c4', '#ffebcd']]
   ]);
 
   // private mutableMap: Map<string, string[]>;
