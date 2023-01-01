@@ -154,5 +154,25 @@
     ],
     "waterGrams": 0,
     "foodColour": "beige"
+  },
+  {
+    "id": 8,
+    "name": "wpaLowFatMilkYogurtShake",
+    "ingredients": [
+      {
+        "id": 27,
+        "g": 300
+      },
+      {
+        "id": 8,
+        "g": 30
+      },
+      {
+        "id": 24,
+        "g": 50
+      }
+    ],
+    "waterGrams": 0,
+    "foodColour": "beige"
   }
 ]

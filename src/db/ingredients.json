@@ -241,5 +241,41 @@
     "proteinPer100Grams": 2.33,
     "fibrePer100Grams": 1.9,
     "foodColour": "darkGreen"
+  },
+  {
+    "id": 27,
+    "name": "liteMilk",
+    "description": "coles brand",
+    "kjPer100Grams": 198,
+    "proteinPer100Grams": 3.6,
+    "fibrePer100Grams": 0,
+    "foodColour": "white"
+  },
+  {
+    "id": 28,
+    "name": "lambKebabs",
+    "description": "https://shop.coles.com.au/a/national/product/coles-lamb-koftas",
+    "kjPer100Grams": 858,
+    "proteinPer100Grams": 14.5,
+    "fibrePer100Grams": 0.9,
+    "foodColour": "redMeat"
+  },
+  {
+    "id": 29,
+    "name": "paleAle",
+    "description": "james quire 150 lashes",
+    "kjPer100Grams": 154,
+    "proteinPer100Grams": 0,
+    "fibrePer100Grams": 0,
+    "foodColour": "wheat"
+  },
+  {
+    "id": 30,
+    "name": "mightyMcMuffin",
+    "description": "Two rashers of bacon, egg, cheese and a sausage patty on an English muffin. A mighty eat to rid you of your mighty hunger.",
+    "kjPer100Grams": 943,
+    "proteinPer100Grams": 15,
+    "fibrePer100Grams": 0,
+    "foodColour": "wheat"
   }
 ]
