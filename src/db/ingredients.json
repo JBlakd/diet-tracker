@@ -304,5 +304,14 @@
     "proteinPer100Grams": 0.2,
     "fibrePer100Grams": 1.2,
     "foodColour": "tomato"
+  },
+  {
+    "id": 34,
+    "name": "chickenThigh",
+    "description": "",
+    "kjPer100Grams": 1025,
+    "proteinPer100Grams": 24.85,
+    "fibrePer100Grams": 0,
+    "foodColour": "redMeat"
   }
 ]

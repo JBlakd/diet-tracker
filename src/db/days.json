@@ -335,6 +335,26 @@
         "id": 8,
         "g": 380,
         "isIngredient": false
+      },
+      {
+        "id": 5,
+        "g": 388,
+        "isIngredient": false
+      },
+      {
+        "id": 34,
+        "g": 82,
+        "isIngredient": true
+      },
+      {
+        "id": 14,
+        "g": 103,
+        "isIngredient": true
+      },
+      {
+        "id": 23,
+        "g": 400,
+        "isIngredient": true
       }
     ]
   }
