@@ -312,5 +312,30 @@
         "isIngredient": false
       }
     ]
+  },
+  {
+    "date": "2023-01-02",
+    "meals": [
+      {
+        "id": 5,
+        "g": 266,
+        "isIngredient": false
+      },
+      {
+        "id": 33,
+        "g": 104,
+        "isIngredient": true
+      },
+      {
+        "id": 22,
+        "g": 228.2,
+        "isIngredient": true
+      },
+      {
+        "id": 8,
+        "g": 380,
+        "isIngredient": false
+      }
+    ]
   }
 ]

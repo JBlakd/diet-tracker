@@ -295,5 +295,14 @@
     "proteinPer100Grams": 16.13,
     "fibrePer100Grams": 0,
     "foodColour": "redMeat"
+  },
+  {
+    "id": 33,
+    "name": "grapeTomato",
+    "description": "",
+    "kjPer100Grams": 75,
+    "proteinPer100Grams": 0.2,
+    "fibrePer100Grams": 1.2,
+    "foodColour": "tomato"
   }
 ]
