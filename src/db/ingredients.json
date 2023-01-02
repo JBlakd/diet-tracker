@@ -277,5 +277,23 @@
     "proteinPer100Grams": 15,
     "fibrePer100Grams": 0,
     "foodColour": "wheat"
+  },
+  {
+    "id": 31,
+    "name": "wagyu",
+    "description": "",
+    "kjPer100Grams": 1197,
+    "proteinPer100Grams": 17.85,
+    "fibrePer100Grams": 0,
+    "foodColour": "redMeat"
+  },
+  {
+    "id": 32,
+    "name": "bulgogi",
+    "description": "",
+    "kjPer100Grams": 678,
+    "proteinPer100Grams": 16.13,
+    "fibrePer100Grams": 0,
+    "foodColour": "redMeat"
   }
 ]
