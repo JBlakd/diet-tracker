@@ -349,5 +349,50 @@
     "proteinPer100Grams": 26.3,
     "fibrePer100Grams": 0,
     "foodColour": "beige"
+  },
+  {
+    "id": 39,
+    "name": "friedRice",
+    "description": "",
+    "kjPer100Grams": 1392,
+    "proteinPer100Grams": 12.47,
+    "fibrePer100Grams": 1.4,
+    "foodColour": "wheat"
+  },
+  {
+    "id": 40,
+    "name": "brownBasmatiRiceCooked",
+    "description": "coles",
+    "kjPer100Grams": 906,
+    "proteinPer100Grams": 5.03,
+    "fibrePer100Grams": 3.5,
+    "foodColour": "beige"
+  },
+  {
+    "id": 41,
+    "name": "roastDuck",
+    "description": "chinese",
+    "kjPer100Grams": 1406,
+    "proteinPer100Grams": 18.91,
+    "fibrePer100Grams": 0,
+    "foodColour": "redMeat"
+  },
+  {
+    "id": 42,
+    "name": "choySum",
+    "description": "chinese",
+    "kjPer100Grams": 48,
+    "proteinPer100Grams": 1.32,
+    "fibrePer100Grams": 0.9,
+    "foodColour": "darkGreen"
+  },
+  {
+    "id": 43,
+    "name": "snapperFish",
+    "description": "",
+    "kjPer100Grams": 536,
+    "proteinPer100Grams": 26.3,
+    "fibrePer100Grams": 0,
+    "foodColour": "beige"
   }
 ]

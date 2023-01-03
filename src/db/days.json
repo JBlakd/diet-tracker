@@ -382,5 +382,50 @@
         "isIngredient": true
       }
     ]
+  },
+  {
+    "date": "2023-01-02",
+    "meals": [
+      {
+        "id": 39,
+        "g": 287.1,
+        "isIngredient": true
+      },
+      {
+        "id": 6,
+        "g": 293,
+        "isIngredient": false
+      },
+      {
+        "id": 6,
+        "g": 293,
+        "isIngredient": false
+      },
+      {
+        "id": 5,
+        "g": 456,
+        "isIngredient": false
+      },
+      {
+        "id": 40,
+        "g": 81,
+        "isIngredient": true
+      },
+      {
+        "id": 41,
+        "g": 77.5,
+        "isIngredient": true
+      },
+      {
+        "id": 42,
+        "g": 72,
+        "isIngredient": true
+      },
+      {
+        "id": 43,
+        "g": 62,
+        "isIngredient": true
+      }
+    ]
   }
 ]
