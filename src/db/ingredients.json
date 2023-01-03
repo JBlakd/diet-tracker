@@ -313,5 +313,41 @@
     "proteinPer100Grams": 24.85,
     "fibrePer100Grams": 0,
     "foodColour": "redMeat"
+  },
+  {
+    "id": 35,
+    "name": "kranskySausage",
+    "description": "primo",
+    "kjPer100Grams": 984,
+    "proteinPer100Grams": 15.1,
+    "fibrePer100Grams": 0,
+    "foodColour": "redMeat"
+  },
+  {
+    "id": 36,
+    "name": "chorizoSausage",
+    "description": "primo",
+    "kjPer100Grams": 1150,
+    "proteinPer100Grams": 20.6,
+    "fibrePer100Grams": 0,
+    "foodColour": "redMeat"
+  },
+  {
+    "id": 37,
+    "name": "lowCarbWrap",
+    "description": "low carb superfood co",
+    "kjPer100Grams": 1030,
+    "proteinPer100Grams": 19.4,
+    "fibrePer100Grams": 16.2,
+    "foodColour": "wheat"
+  },
+  {
+    "id": 38,
+    "name": "pizzaCheese",
+    "description": "perfect italiano three cheese pizza",
+    "kjPer100Grams": 1380,
+    "proteinPer100Grams": 26.3,
+    "fibrePer100Grams": 0,
+    "foodColour": "beige"
   }
 ]

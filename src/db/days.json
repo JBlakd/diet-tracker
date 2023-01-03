@@ -355,6 +355,31 @@
         "id": 23,
         "g": 400,
         "isIngredient": true
+      },
+      {
+        "id": 33,
+        "g": 60,
+        "isIngredient": true
+      },
+      {
+        "id": 35,
+        "g": 20,
+        "isIngredient": true
+      },
+      {
+        "id": 36,
+        "g": 20,
+        "isIngredient": true
+      },
+      {
+        "id": 37,
+        "g": 84,
+        "isIngredient": true
+      },
+      {
+        "id": 38,
+        "g": 30,
+        "isIngredient": true
       }
     ]
   }
