@@ -73,7 +73,7 @@ const DailyBreakdownBarChart = ({ days, dishes, ingredients }: { days: Day[], di
     };
   });
 
-  // console.log('datasets: ', datasets);
+  console.log('datasets: ', datasets);
 
   const data = {
     labels: days.map(d => d.date),
