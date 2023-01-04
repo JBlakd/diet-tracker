@@ -425,6 +425,46 @@
         "id": 43,
         "g": 62,
         "isIngredient": true
+      },
+      {
+        "id": 23,
+        "g": 836.8,
+        "isIngredient": true
+      },
+      {
+        "id": 8,
+        "g": 380,
+        "isIngredient": false
+      }
+    ]
+  },
+  {
+    "date": "2023-01-04",
+    "meals": [
+      {
+        "id": 9,
+        "g": 128,
+        "isIngredient": false
+      },
+      {
+        "id": 40,
+        "g": 47,
+        "isIngredient": true
+      },
+      {
+        "id": 9,
+        "g": 218,
+        "isIngredient": false
+      },
+      {
+        "id": 40,
+        "g": 70,
+        "isIngredient": true
+      },
+      {
+        "id": 6,
+        "g": 293,
+        "isIngredient": false
       }
     ]
   }

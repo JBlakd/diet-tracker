@@ -394,5 +394,14 @@
     "proteinPer100Grams": 26.3,
     "fibrePer100Grams": 0,
     "foodColour": "beige"
+  },
+  {
+    "id": 44,
+    "name": "carrot",
+    "description": "",
+    "kjPer100Grams": 220,
+    "proteinPer100Grams": 1.19,
+    "fibrePer100Grams": 3.6,
+    "foodColour": "orange"
   }
 ]
