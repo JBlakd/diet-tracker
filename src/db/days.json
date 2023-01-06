@@ -610,6 +610,11 @@
         "id": 38,
         "g": 21,
         "isIngredient": true
+      },
+      {
+        "id": 23,
+        "g": 900,
+        "isIngredient": true
       }
     ]
   }
