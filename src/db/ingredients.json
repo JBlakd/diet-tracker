@@ -403,5 +403,23 @@
     "proteinPer100Grams": 1.19,
     "fibrePer100Grams": 3.6,
     "foodColour": "orange"
+  },
+  {
+    "id": 45,
+    "name": "oliveSourdough",
+    "description": "",
+    "kjPer100Grams": 994,
+    "proteinPer100Grams": 6.8,
+    "fibrePer100Grams": 2.9,
+    "foodColour": "wheat"
+  },
+  {
+    "id": 46,
+    "name": "peanutButter",
+    "description": "",
+    "kjPer100Grams": 2610,
+    "proteinPer100Grams": 23.9,
+    "fibrePer100Grams": 0,
+    "foodColour": "beige"
   }
 ]
