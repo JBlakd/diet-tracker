@@ -690,6 +690,11 @@
         "id": 49,
         "g": 50,
         "isIngredient": true
+      },
+      {
+        "id": 23,
+        "g": 1235,
+        "isIngredient": true
       }
     ]
   }
