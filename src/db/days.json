@@ -697,5 +697,54 @@
         "isIngredient": true
       }
     ]
+  },
+  {
+    "date": "2023-01-07",
+    "meals": [
+      {
+        "id": 6,
+        "g": 280,
+        "isIngredient": false
+      },
+      {
+        "id": 10,
+        "g": 336,
+        "isIngredient": true
+      },
+      {
+        "id": 10,
+        "g": 100,
+        "isIngredient": false
+      },
+      {
+        "id": 51,
+        "g": 100,
+        "isIngredient": true
+      },
+      {
+        "id": 50,
+        "g": 9,
+        "isIngredient": true
+      },
+      {
+        "id": 38,
+        "g": 41,
+        "isIngredient": true
+      },
+      {
+        "id": 51,
+        "g": 150,
+        "isIngredient": true
+      },
+      {
+        "id": 52,
+        "isIngredient": true
+      },
+      {
+        "id": 8,
+        "g": 380,
+        "isIngredient": false
+      }
+    ]
   }
 ]

@@ -448,5 +448,32 @@
     "proteinPer100Grams": 0.9,
     "fibrePer100Grams": 3.2,
     "foodColour": "grape"
+  },
+  {
+    "id": 50,
+    "name": "butter",
+    "description": "",
+    "kjPer100Grams": 3000,
+    "proteinPer100Grams": 0.85,
+    "fibrePer100Grams": 0,
+    "foodColour": "wheat"
+  },
+  {
+    "id": 51,
+    "name": "kale",
+    "description": "",
+    "kjPer100Grams": 209,
+    "proteinPer100Grams": 3.3,
+    "fibrePer100Grams": 2,
+    "foodColour": "darkGreen"
+  },
+  {
+    "id": 52,
+    "name": "ferreroRocher",
+    "description": "",
+    "kjPer100Grams": 2440,
+    "proteinPer100Grams": 1,
+    "fibrePer100Grams": 0,
+    "foodColour": "brown"
   }
 ]
