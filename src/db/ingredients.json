@@ -421,5 +421,32 @@
     "proteinPer100Grams": 23.9,
     "fibrePer100Grams": 0,
     "foodColour": "beige"
+  },
+  {
+    "id": 47,
+    "name": "tunaInBrine",
+    "description": "coles",
+    "kjPer100Grams": 357,
+    "proteinPer100Grams": 19.5,
+    "fibrePer100Grams": 0,
+    "foodColour": "beige"
+  },
+  {
+    "id": 48,
+    "name": "parsley",
+    "description": "",
+    "kjPer100Grams": 151,
+    "proteinPer100Grams": 2.97,
+    "fibrePer100Grams": 3.3,
+    "foodColour": "darkGreen"
+  },
+  {
+    "id": 49,
+    "name": "mixedBerriesFrozen",
+    "description": "",
+    "kjPer100Grams": 239,
+    "proteinPer100Grams": 0.9,
+    "fibrePer100Grams": 3.2,
+    "foodColour": "grape"
   }
 ]
