@@ -242,5 +242,69 @@
     ],
     "waterGrams": 0,
     "foodColour": "darkGreen"
+  },
+  {
+    "id": 11,
+    "name": "lapCheongFriedRice",
+    "ingredients": [
+      {
+        "id": 53,
+        "g": 50
+      },
+      {
+        "id": 40,
+        "g": 300
+      },
+      {
+        "id": 51,
+        "g": 100
+      },
+      {
+        "id": 10,
+        "g": 160
+      }
+    ],
+    "waterGrams": 0,
+    "foodColour": "wheat"
+  },
+  {
+    "id": 12,
+    "name": "cornedBeefKaleStew",
+    "ingredients": [
+      {
+        "id": 54,
+        "g": 587
+      },
+      {
+        "id": 0,
+        "g": 252
+      },
+      {
+        "id": 55,
+        "g": 240
+      },
+      {
+        "id": 56,
+        "g": 240
+      },
+      {
+        "id": 5,
+        "g": 267
+      },
+      {
+        "id": 4,
+        "g": 82
+      },
+      {
+        "id": 51,
+        "g": 365
+      },
+      {
+        "id": 57,
+        "g": 271
+      }
+    ],
+    "waterGrams": 262,
+    "foodColour": "wheat"
   }
 ]

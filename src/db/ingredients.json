@@ -475,5 +475,68 @@
     "proteinPer100Grams": 1,
     "fibrePer100Grams": 0,
     "foodColour": "brown"
+  },
+  {
+    "id": 53,
+    "name": "lapCheong",
+    "description": "",
+    "kjPer100Grams": 1393,
+    "proteinPer100Grams": 13.72,
+    "fibrePer100Grams": 0,
+    "foodColour": "redMeat"
+  },
+  {
+    "id": 54,
+    "name": "cornedBeef",
+    "description": "bertocchi",
+    "kjPer100Grams": 450,
+    "proteinPer100Grams": 17.7,
+    "fibrePer100Grams": 0,
+    "foodColour": "redMeat"
+  },
+  {
+    "id": 55,
+    "name": "redKidneyBean",
+    "description": "edgell",
+    "kjPer100Grams": 482,
+    "proteinPer100Grams": 6.6,
+    "fibrePer100Grams": 7,
+    "foodColour": "redMeat"
+  },
+  {
+    "id": 56,
+    "name": "blackBean",
+    "description": "annalisa",
+    "kjPer100Grams": 365,
+    "proteinPer100Grams": 6.5,
+    "fibrePer100Grams": 6.9,
+    "foodColour": "brown"
+  },
+  {
+    "id": 57,
+    "name": "tomatoWhole",
+    "description": "",
+    "kjPer100Grams": 75,
+    "proteinPer100Grams": 0.88,
+    "fibrePer100Grams": 1.2,
+    "foodColour": "tomato"
+  },
+  {
+    "id": 58,
+    "name": "sauerkraut",
+    "description": "edgell",
+    "kjPer100Grams": 86,
+    "proteinPer100Grams": 0.8,
+    "fibrePer100Grams": 0.3,
+    "foodColour": "wheat"
+  },
+  {
+    "id": 59,
+    "name": "tofu",
+    "description": "soft silken",
+    "kjPer100Grams": 193,
+    "proteinPer100Grams": 4.03,
+    "fibrePer100Grams": 0.3,
+    "foodColour": "white"
   }
 ]

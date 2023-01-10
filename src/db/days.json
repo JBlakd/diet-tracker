@@ -750,6 +750,132 @@
   },
   {
     "date": "2023-01-09",
-    "meals": []
+    "meals": [
+      {
+        "id": 11,
+        "g": 200,
+        "isIngredient": false
+      },
+      {
+        "id": 6,
+        "g": 290,
+        "isIngredient": false
+      },
+      {
+        "id": 11,
+        "g": 300,
+        "isIngredient": false
+      },
+      {
+        "id": 11,
+        "g": 384,
+        "isIngredient": false
+      },
+      {
+        "id": 10,
+        "g": 110,
+        "isIngredient": true
+      },
+      {
+        "id": 50,
+        "g": 5,
+        "isIngredient": true
+      },
+      {
+        "id": 38,
+        "g": 13,
+        "isIngredient": true
+      },
+      {
+        "id": 12,
+        "g": 343,
+        "isIngredient": false
+      },
+      {
+        "id": 38,
+        "g": 20,
+        "isIngredient": true
+      },
+      {
+        "id": 58,
+        "g": 33,
+        "isIngredient": true
+      },
+      {
+        "id": 23,
+        "g": 1084,
+        "isIngredient": true
+      },
+      {
+        "id": 8,
+        "g": 380,
+        "isIngredient": false
+      },
+      {
+        "id": 49,
+        "g": 30,
+        "isIngredient": true
+      }
+    ]
+  },
+  {
+    "date": "2023-01-10",
+    "meals": [
+      {
+        "id": 8,
+        "g": 380,
+        "isIngredient": false
+      },
+      {
+        "id": 49,
+        "g": 30,
+        "isIngredient": true
+      },
+      {
+        "id": 6,
+        "g": 290,
+        "isIngredient": false
+      },
+      {
+        "id": 6,
+        "g": 290,
+        "isIngredient": false
+      },
+      {
+        "id": 12,
+        "g": 420,
+        "isIngredient": false
+      },
+      {
+        "id": 38,
+        "g": 20,
+        "isIngredient": true
+      },
+      {
+        "id": 58,
+        "g": 29,
+        "isIngredient": true
+      },
+      {
+        "id": 12,
+        "g": 270,
+        "isIngredient": false
+      },
+      {
+        "id": 14,
+        "g": 110,
+        "isIngredient": true
+      },
+      {
+        "id": 43,
+        "g": 55,
+        "isIngredient": true
+      },
+      {
+        "id": 59,
+        "g": 100,
+        "isIngredient": true
+      }
+    ]
   }
 ]
