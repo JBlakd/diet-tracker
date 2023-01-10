@@ -910,6 +910,11 @@
         "id": 50,
         "g": 5,
         "isIngredient": true
+      },
+      {
+        "id": 23,
+        "g": 1051,
+        "isIngredient": true
       }
     ]
   }
