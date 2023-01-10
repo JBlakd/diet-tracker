@@ -875,6 +875,41 @@
         "id": 59,
         "g": 100,
         "isIngredient": true
+      },
+      {
+        "id": 33,
+        "g": 65,
+        "isIngredient": true
+      },
+      {
+        "id": 59,
+        "g": 100,
+        "isIngredient": true
+      },
+      {
+        "id": 10,
+        "g": 168,
+        "isIngredient": true
+      },
+      {
+        "id": 12,
+        "g": 50,
+        "isIngredient": false
+      },
+      {
+        "id": 59,
+        "g": 100,
+        "isIngredient": true
+      },
+      {
+        "id": 38,
+        "g": 20,
+        "isIngredient": true
+      },
+      {
+        "id": 50,
+        "g": 5,
+        "isIngredient": true
       }
     ]
   }
