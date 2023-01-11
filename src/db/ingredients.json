@@ -538,5 +538,23 @@
     "proteinPer100Grams": 4.03,
     "fibrePer100Grams": 0.3,
     "foodColour": "white"
+  },
+  {
+    "id": 60,
+    "name": "cocoBubbleTea",
+    "description": "50% sugar, with pearls",
+    "kjPer100Grams": 600,
+    "proteinPer100Grams": 0,
+    "fibrePer100Grams": 0,
+    "foodColour": "beige"
+  },
+  {
+    "id": 61,
+    "name": "wickedWings",
+    "description": "KFC",
+    "kjPer100Grams": 1255,
+    "proteinPer100Grams": 18.9,
+    "fibrePer100Grams": 0,
+    "foodColour": "wheat"
   }
 ]
