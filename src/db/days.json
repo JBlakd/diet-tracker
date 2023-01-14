@@ -1070,6 +1070,76 @@
         "id": 23,
         "g": 1390,
         "isIngredient": true
+      },
+      {
+        "id": 13,
+        "g": 267,
+        "isIngredient": false
+      }
+    ]
+  },
+  {
+    "date": "2023-01-13",
+    "meals": [
+      {
+        "id": 6,
+        "g": 290,
+        "isIngredient": false
+      },
+      {
+        "id": 13,
+        "g": 267,
+        "isIngredient": false
+      },
+      {
+        "id": 9,
+        "g": 293,
+        "isIngredient": true
+      },
+      {
+        "id": 62,
+        "g": 75,
+        "isIngredient": true
+      },
+      {
+        "id": 9,
+        "g": 134,
+        "isIngredient": true
+      },
+      {
+        "id": 63,
+        "g": 180,
+        "isIngredient": true
+      },
+      {
+        "id": 62,
+        "g": 643,
+        "isIngredient": true
+      },
+      {
+        "id": 23,
+        "g": 1013,
+        "isIngredient": true
+      }
+    ]
+  },
+  {
+    "date": "2023-01-14",
+    "meals": [
+      {
+        "id": 6,
+        "g": 290,
+        "isIngredient": false
+      },
+      {
+        "id": 10,
+        "g": 70,
+        "isIngredient": true
+      },
+      {
+        "id": 64,
+        "g": 218,
+        "isIngredient": true
       }
     ]
   }

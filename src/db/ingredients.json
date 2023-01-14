@@ -556,5 +556,32 @@
     "proteinPer100Grams": 18.9,
     "fibrePer100Grams": 0,
     "foodColour": "wheat"
+  },
+  {
+    "id": 62,
+    "name": "porkBoneBeanSoup",
+    "description": "",
+    "kjPer100Grams": 200,
+    "proteinPer100Grams": 10,
+    "fibrePer100Grams": 0,
+    "foodColour": "brown"
+  },
+  {
+    "id": 63,
+    "name": "stuffedChillies",
+    "description": "",
+    "kjPer100Grams": 514,
+    "proteinPer100Grams": 11.23,
+    "fibrePer100Grams": 0.35,
+    "foodColour": "darkGreen"
+  },
+  {
+    "id": 64,
+    "name": "chiveDumpling",
+    "description": "",
+    "kjPer100Grams": 665,
+    "proteinPer100Grams": 7.5,
+    "fibrePer100Grams": 2,
+    "foodColour": "wheat"
   }
 ]
