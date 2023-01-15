@@ -1160,7 +1160,12 @@
         "id": 65,
         "g": 50,
         "isIngredient": true
-      },
+      }
+    ]
+  },
+  {
+    "date": "2023-01-15",
+    "meals": [
       {
         "id": 49,
         "g": 55,
@@ -1174,6 +1179,11 @@
       {
         "id": 23,
         "g": 339,
+        "isIngredient": true
+      },
+      {
+        "id": 64,
+        "g": 200,
         "isIngredient": true
       }
     ]
