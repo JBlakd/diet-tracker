@@ -1160,6 +1160,21 @@
         "id": 65,
         "g": 50,
         "isIngredient": true
+      },
+      {
+        "id": 49,
+        "g": 55,
+        "isIngredient": true
+      },
+      {
+        "id": 8,
+        "g": 380,
+        "isIngredient": false
+      },
+      {
+        "id": 23,
+        "g": 339,
+        "isIngredient": true
       }
     ]
   }
