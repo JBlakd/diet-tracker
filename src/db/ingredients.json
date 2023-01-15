@@ -582,6 +582,15 @@
     "kjPer100Grams": 665,
     "proteinPer100Grams": 7.5,
     "fibrePer100Grams": 2,
+    "foodColour": "beige"
+  },
+  {
+    "id": 65,
+    "name": "cornCob",
+    "description": "",
+    "kjPer100Grams": 176,
+    "proteinPer100Grams": 2,
+    "fibrePer100Grams": 1.4,
     "foodColour": "wheat"
   }
 ]
