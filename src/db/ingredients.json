@@ -592,5 +592,50 @@
     "proteinPer100Grams": 2,
     "fibrePer100Grams": 1.4,
     "foodColour": "wheat"
+  },
+  {
+    "id": 66,
+    "name": "beefTendon",
+    "description": "",
+    "kjPer100Grams": 613,
+    "proteinPer100Grams": 34.6,
+    "fibrePer100Grams": 0,
+    "foodColour": "redMeat"
+  },
+  {
+    "id": 67,
+    "name": "wontonSoup",
+    "description": "",
+    "kjPer100Grams": 314,
+    "proteinPer100Grams": 5.88,
+    "fibrePer100Grams": 0,
+    "foodColour": "white"
+  },
+  {
+    "id": 68,
+    "name": "beefMince10%fat",
+    "description": "coles4star",
+    "kjPer100Grams": 736,
+    "proteinPer100Grams": 21.4,
+    "fibrePer100Grams": 0,
+    "foodColour": "redMeat"
+  },
+  {
+    "id": 69,
+    "name": "cheddar",
+    "description": "colesShredded",
+    "kjPer100Grams": 1730,
+    "proteinPer100Grams": 24.6,
+    "fibrePer100Grams": 0,
+    "foodColour": "wheat"
+  },
+  {
+    "id": 70,
+    "name": "guacamole",
+    "description": "",
+    "kjPer100Grams": 485,
+    "proteinPer100Grams": 1.62,
+    "fibrePer100Grams": 4.9,
+    "foodColour": "darkGreen"
   }
 ]

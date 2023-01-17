@@ -334,5 +334,33 @@
     ],
     "waterGrams": 262,
     "foodColour": "wheat"
+  },
+  {
+    "id": 14,
+    "name": "minceAndBeanFajita",
+    "ingredients": [
+      {
+        "id": 10,
+        "g": 167
+      },
+      {
+        "id": 0,
+        "g": 252
+      },
+      {
+        "id": 1,
+        "g": 252
+      },
+      {
+        "id": 5,
+        "g": 182
+      },
+      {
+        "id": 4,
+        "g": 108
+      }
+    ],
+    "waterGrams": 0,
+    "foodColour": "tomato"
   }
 ]
